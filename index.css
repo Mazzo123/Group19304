@@ -1,0 +1,20 @@
+.Head {
+    color: rgb(0, 255, 187);
+    position:relative;
+    left: 650px;
+    font-size: 32px;
+}
+.graphs{
+    position: relative;
+    left: 700px;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+}
+.CO2{
+    position: relative;
+    left: 300px;
+}
+.details{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
