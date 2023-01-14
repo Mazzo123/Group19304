@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2dce15eecc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="new.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="Images/icons/icon.png">
+    <title>Aqua Detector</title>
+</head>
+
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <!-- nav-bar code -->
+    <nav class="nav-bar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Group 19304</a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#our-team" class="menu-btn">Our Team</a></li>
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section code -->
+    <Section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="sh">Graphs</div>
+                <div class="graphs">
+                    <iframe width="430" height="260" style="border: 1px solid #ffffff;" src="https://thingspeak.com/channels/1964068/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=waterlevel&type=line"></iframe>
+                    <iframe width="430" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1964068/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                    <div class="me">            
+                                <img src="pos.PNG"width="430" height="260"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="neg.PNG"width="430" height="260">
+                        </div>
+                </div>        
+    </Section>
+       <!-- about section start -->
+       <Section class="about" id="about">
+        <div class="max-width">
+            <h1 class="title">The Function</h1>
+            <div class="us">
+            <label style="font: size 32px;"><b>Amount of CO2 in ppm:</b><br>
+                <input type="number" class="om"id="myText" style="width: 200px; height: 40px">
+        <button onclick="myFunction()" style="color:rgb(255, 255, 255)" class="button"><b>Calculate</b></button><br>
+        <label><b>Water Level will be</b></label> <label id="demo"style="color:rgb(0,0,0)"></label> 
+     <label style="color:rgb(0, 0, 0)" ><b>mm</b></label>
+     <script>
+        function myFunction() {
+          var x = document.getElementById("myText").value;
+          document.getElementById("demo").innerHTML = (0.0014*x-(-14.436));
+        }
+        </script>
+
+        </div>
+    </Section>
+    <Section class="about" id="about">
+        <div class="max-width">
+            <h1 class="title">For More Details</h1>
+            <div class="pos">
+            <label style="font: size 32px;"><b>Poster</b></label> <a href="https://drive.google.com/file/d/1KVhkjcTSXaT-Q9EcpAm_rJg-tG4KlSBU/view?usp=sharing">
+            <button style="color:rgb(255, 255, 255)" class="button"><b>Poster</b></button></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label style="font: size 32px;"><b>Portofolio</b></label> <a href="https://drive.google.com/file/d/1znRgcoTYWXUIr7oB53HTiHmQVRpCTAdN/view?usp=sharing">
+                <button style="color:rgb(255, 255, 255)" class="button"><b>Portofolio</b></button></a>
+
+            
+        </div>
+    </Section>
+
+
+    <!-- Our Team section start -->
+    <Section class="our-team" id="our-team">
+        <div class="max-width">
+            <h2 class="title">Team Members <br> Shebin's Hackers</h2>
+            <div class="our-team-content">
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                        <div class="box">
+                            <img class="main" src="Moaaz.jpg" alt="">
+                            <span class="name">Moaaz Hesham</span>
+                            <span class="contact-details">
+                                <a href="mailto: moaz.1920038@stemgharbiya.moe.edu.eg"> 
+                                    <i class="fas fa-envelope con"></i></a>
+                                    <a href="https://wa.me/+201063223393">
+                                        <i class="fa fa-whatsapp con"></i></a>
+                                <a href="tel: +201063223393">
+                                    <i class="fas fa-phone con"></i></a></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img class="main" src="Shawky.jpg" alt="">
+                            <span class="name">Mohamed Shawky</span>
+                            <span class="contact-details">
+                                <a href="mailto: mohammed.1920027@stemgharbiya.moe.edu"> 
+                                    <i class="fas fa-envelope con"></i></a>
+                                    <a href="https://wa.me/+201097442743">
+                                        <i class="fa fa-whatsapp con"></i></a>
+                                <a href="tel: +201097442743">
+                                       <i class="fas fa-phone con"></i></a></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img class="main" src="Abo Alaa.jpg" alt="">
+                            <span class="name">Youssef Alaa</span>
+                            <span class="contact-details">
+                                <a href="mailto: youssef.1920041@stemgharbiya.moe.edu.eg"> 
+                                    <i class="fas fa-envelope con"></i></a>
+                                    <a href="https://wa.me/+201017611163">
+                                        <i class="fa fa-whatsapp con"></i></a>
+                                <a href="tel: +201017611163">
+                                     <i class="fas fa-phone con"></i></a>
+                                       </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </Section>
+</body>
+</html>
