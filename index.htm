@@ -59,11 +59,11 @@
                 <input type="number" class="om"id="myText" style="width: 200px; height: 40px">
         <button onclick="myFunction()" style="color:rgb(255, 255, 255)" class="button"><b>Calculate</b></button><br>
         <label><b>Water Level will be</b></label> <label id="demo"style="color:rgb(0,0,0)"></label> 
-     <label style="color:rgb(0, 0, 0)" ><b>mm</b></label>
+     <label style="color:rgb(0, 0, 0)" ><b>Meters</b></label>
      <script>
         function myFunction() {
           var x = document.getElementById("myText").value;
-          document.getElementById("demo").innerHTML = (0.0014*x-(-14.436));
+          document.getElementById("demo").innerHTML = (220.440*(0.0014*x-(-14.436)));
         }
         </script>
 
