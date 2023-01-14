@@ -252,6 +252,8 @@ section {
     margin: 0 2px 0 10px;
     cursor:pointer;
     margin-bottom: 5px;
+    position: relative;
+    left: 410px;
 }
 
 
